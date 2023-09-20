@@ -195,7 +195,7 @@
 #hide-checkbox:checked + .toggle .toggle-button {
     background: #F7FFFF;
     transform: translateX(35.7px);
-    box-shadow: 0 0 35px 5px rgba(255, 255, 255);
+    box-shadow: 0 0 35px 5px rgb(0, 0, 0);
 }
 
 #hide-checkbox:checked + .toggle .toggle-button .crater {

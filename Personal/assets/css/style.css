@@ -46,7 +46,7 @@ body.light{
   color: #ffffff;
 }
 body.light::before{
-  background: linear-gradient(45deg, #00ceff, transparent)
+  background: linear-gradient(45deg, #0C356A, transparent)
 }
 
 body::before {
@@ -145,8 +145,12 @@ h6 {
 }
 
 #header h2 span {
-  color: #fff;
-  
+  color: #128dea;
+  padding-bottom: 6px;
+}
+
+#header.light h2 span {
+  color: #40F8FF;
   padding-bottom: 6px;
 }
 
@@ -172,23 +176,39 @@ h6 {
   border-radius: 50%;
   width: 40px;
   height: 40px;
+  transition: 0.5s;
 }
 
 #header .social-links.light a{
-  background: rgb(18 139 231);
+  background: #0C356A;
+  color: #D5FFD0;
 }
 
 
 #header .social-links a:hover {
   background: #128dea;
+
 }
 
 
 #header .social-links.light a:hover {
-  background: #ffffff;
+  background: #D5FFD0;
+  color: #0C356A;
 
 }
 
+#pointer_profile{
+  color: #128dea;
+  font-size: 30px;
+}
+
+#pointer_profile.light{
+  color: #40F8FF;
+}
+
+.word{
+  color: #128dea
+}
 
 @media (max-width: 992px) {
   #header h1 {
@@ -240,7 +260,7 @@ h6 {
 }
 
 #header.header-top.light{
-  background: rgb(18 141 234 / 51%);
+  background: rgba(0, 0, 0, 0.51);
 }
 
 #header.header-top .social-links,
@@ -391,7 +411,7 @@ h6 {
 .navbar.light .active,
 .navbar.light .active:focus,
 .navbar.light li:hover>a {
-  color: #0a53be;
+  color: #40f8ff;
 }
 
 /**
@@ -498,7 +518,7 @@ section .container {
 
 
 section .container.light{
-  background: rgb(18 141 234 / 51%);
+  background: rgba(0, 0, 0, 0.73);
 
 }
 
@@ -534,7 +554,7 @@ section .container.light{
 }
 
 .section-title.light h2{
-  color: #005595;
+  color: rgb(64 248 255 / 58%);
 
 }
 
@@ -545,6 +565,12 @@ section .container.light{
   display: inline-block;
   background: #0092ff;
   margin: 4px 10px;
+}
+
+
+.section-title h2::after {
+  background: rgb(64 248 255 / 58%);
+
 }
 
 .section-title p {
@@ -558,7 +584,7 @@ section .container.light{
 }
 
 .section-title.light p{
-  color: black;
+  color: white;
 }
 
 
@@ -571,8 +597,8 @@ section .container.light{
   color: #128dea;
 }
 
-.about-me .content.light {
-  color: black;
+.about-me .content.light h3 {
+  color: #40F8FF;
 }
 
 
@@ -602,6 +628,10 @@ section .container.light{
   line-height: 0;
 }
 
+.about-me.light .content ul i {
+  color: #40F8FF;
+}
+
 .about-me .content p:last-child {
   margin-bottom: 0;
 }
@@ -622,7 +652,7 @@ section .container.light{
 }
 
 .count-box.light{
-  background: rgb(21 154 253 / 53%);
+  background: rgb(64 248 255 / 58%);
 }
 
 .counts .count-box i {
@@ -636,6 +666,11 @@ section .container.light{
   color: #128dea;
   border-radius: 50px;
   line-height: 0;
+}
+.counts.light .count-box i{
+  background: rgb(4 4 4 / 62%);
+  color: rgb(64 248 255 / 58%);
+
 }
 
 .counts .count-box span {
@@ -673,7 +708,7 @@ section .container.light{
 }
 
 .skills.light .progress .skill{
-  color: black;
+  color: #ffffff;
 }
 
 .skills .progress .skill .val {
@@ -689,7 +724,7 @@ section .container.light{
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: #128dea;
+  background-color: #40F8FF;
 }
 
 .skills.light{
@@ -722,13 +757,13 @@ section .container.light{
 }
 
 .interests.light .icon-box h3{
-  color: #231c1c;
+  color: #ffffff;
 }
 
 
 
 .interests.light .icon-box.light{
-  background: rgb(21 154 253 / 53%);
+  background: rgb(64 248 255 / 58%);
 }
 
 /*--------------------------------------------------------------
@@ -830,6 +865,11 @@ section .container.light{
   position: relative;
 }
 
+.resume.light .resume-item {
+
+  border-left: 2px dashed #40F8FF;
+}
+
 .resume .resume-item h4 {
   line-height: 18px;
   font-size: 18px;
@@ -838,6 +878,12 @@ section .container.light{
   font-family: "Poppins", sans-serif;
   color: #128dea;
   margin-bottom: 10px;
+}
+
+.resume.light .resume-item h4 {
+
+  color: #40F8FF;
+
 }
 
 
@@ -906,6 +952,14 @@ section .container.light{
   border: 2px solid #128dea;
   transform: rotate(45deg);
 }
+
+.resume.light .resume-item::before {
+
+  background: #40F8FF;
+  border: 2px solid #40F8FF;
+
+}
+
 
 /*--------------------------------------------------------------
 # Services
@@ -1021,6 +1075,11 @@ section .container.light{
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
   background: #128dea;
+}
+
+.portfolio.light #portfolio-flters li:hover,
+.portfolio.light #portfolio-flters li.filter-active {
+  background: #40F8FF;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -1227,7 +1286,7 @@ section .container.light{
   background: rgba(255, 255, 255, 0.08);
 }
 .contact .info-box.light{
-  background: rgb(0 161 244 / 37%);
+  background: rgb(64 248 255 / 58%);
 
 }
 
@@ -1241,7 +1300,8 @@ section .container.light{
 }
 
 .contact .info-box.light i.bx{
-  color: black;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.7)
 }
 
 .contact .info-box h3 {
@@ -1252,7 +1312,7 @@ section .container.light{
 }
 
 .contact .info-box.light h3{
-  color: rgba(0, 0, 0, 0.5);
+  color:rgb(255 255 255 / 69%)
 
 }
 
@@ -1266,7 +1326,7 @@ section .container.light{
 
 .contact .info-box.light p {
   padding: 0;
-  color: #000000;
+  color: #ffffff;
 }
 
 .contact .info-box .social-links {
@@ -1287,7 +1347,7 @@ section .container.light{
 
 .contact .info-box.light .social-links a {
 
-  color: #000000;
+  color: #ffffff;
 }
 
 .contact .info-box .social-links a:hover {
@@ -1304,7 +1364,7 @@ section .container.light{
 
 .contact .php-email-form.light {
   padding: 30px;
-  background: rgb(85 183 244);
+  background: rgb(40 153 163);
 }
 
 .contact .php-email-form .error-message {
@@ -1362,8 +1422,8 @@ section .container.light{
 .contact .php-email-form.light input,
 .contact .php-email-form.light textarea {
 
-  background: rgb(134 197 244);
-  color: black;
+  background: rgb(255 255 255);
+  color: #000000;
 
 }
 
