@@ -189,7 +189,7 @@
 }
 
 #hide-checkbox:checked + .toggle {
-    background: #128dea;
+    background: #259298;
 }
 
 #hide-checkbox:checked + .toggle .toggle-button {
