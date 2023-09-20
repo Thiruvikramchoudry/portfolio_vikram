@@ -20,6 +20,8 @@
   width: 100%;
   height: 100%;
   top: 40%;
+  background: #040404 url("../img/gif/bg1.gif")top left no-repeat ;
+  background-size: 100%;
 }
 
 .text_anim{
@@ -239,7 +241,7 @@ h6 {
   }
 
   #pre-video{
-    width: 150%;
+    background: #040404 url("../img/gif/bg1.gif")top left no-repeat ;
   }
   body::before{
     background: #040404 url("../img/gif/portrate.gif")top left no-repeat ;
@@ -293,6 +295,10 @@ h6 {
 
 }
 
+#buzz{
+  display: none;
+}
+
 @media (max-width: 768px) {
   #header.header-top {
     height: 60px;
@@ -302,11 +308,12 @@ h6 {
     font-size: 26px;
   }
   .text_anim{
-    font-size: 40px;
+    font-size: 30px;
   }
 
   #pre-video{
-    width: 200%;
+    background: #040404 url("../img/gif/portrate.gif")top left no-repeat ;
+
   }
 
   body::before{
@@ -320,12 +327,13 @@ h6 {
   }
 
   #pre-video{
-    width: 250%;
-    height: 250%;
-    position: relative;
-    top: 40%;
-    right: 120%;
+    background-size: 100%;
+
   }
+  #buzz{
+    display: block;
+  }
+
 
 }
 
